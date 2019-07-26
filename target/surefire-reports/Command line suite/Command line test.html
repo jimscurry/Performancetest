@@ -1,0 +1,931 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 25 12:43:21 CDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>85 seconds (85317 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yourcompany.Tests.PerformanceTest.checkPerformanceLog()'><b>checkPerformanceLog</b><br>Test class: com.yourcompany.Tests.PerformanceTest<br>Parameters: chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330884543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330884543'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>71</td>
+<td>com.yourcompany.Tests.PerformanceTest@56de5251</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.PerformanceTest.checkPerformanceLog()'><b>checkPerformanceLog</b><br>Test class: com.yourcompany.Tests.PerformanceTest<br>Parameters: chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1351087760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1351087760'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>72</td>
+<td>com.yourcompany.Tests.PerformanceTest@56de5251</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.PerformanceTest.checkPerformanceLog()'><b>checkPerformanceLog</b><br>Test class: com.yourcompany.Tests.PerformanceTest<br>Parameters: chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1155531423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1155531423'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>72</td>
+<td>com.yourcompany.Tests.PerformanceTest@56de5251</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.PerformanceTest.checkPerformanceLog()'><b>checkPerformanceLog</b><br>Test class: com.yourcompany.Tests.PerformanceTest<br>Parameters: chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499251754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499251754'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>83</td>
+<td>com.yourcompany.Tests.PerformanceTest@56de5251</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.TimingLogTest.checkTimingLog()'><b>checkTimingLog</b><br>Test class: com.yourcompany.Tests.TimingLogTest<br>Parameters: chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 288 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1644_1659}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b8ac8285e5734eb896fdc2058dc9d211, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8ac8285e5734eb896fdc2058dc9d211
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1827877676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1827877676'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 288 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1644_1659}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b8ac8285e5734eb896fdc2058dc9d211, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8ac8285e5734eb896fdc2058dc9d211
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>72</td>
+<td>com.yourcompany.Tests.TimingLogTest@163e4e87</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.TimingLogTest.checkTimingLog()'><b>checkTimingLog</b><br>Test class: com.yourcompany.Tests.TimingLogTest<br>Parameters: chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 338 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2560_9166}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=58cd5ab57da94b7aaf21100ac32e25da, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 58cd5ab57da94b7aaf21100ac32e25da
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486098211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486098211'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 338 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2560_9166}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=58cd5ab57da94b7aaf21100ac32e25da, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 58cd5ab57da94b7aaf21100ac32e25da
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>74</td>
+<td>com.yourcompany.Tests.TimingLogTest@163e4e87</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.TimingLogTest.checkTimingLog()'><b>checkTimingLog</b><br>Test class: com.yourcompany.Tests.TimingLogTest<br>Parameters: chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.Km58PL}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=81b22998a25c4c86b7a4d6f392c3d12e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81b22998a25c4c86b7a4d6f392c3d12e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948100253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948100253'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.Km58PL}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=81b22998a25c4c86b7a4d6f392c3d12e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81b22998a25c4c86b7a4d6f392c3d12e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>83</td>
+<td>com.yourcompany.Tests.TimingLogTest@163e4e87</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.TimingLogTest.checkTimingLog()'><b>checkTimingLog</b><br>Test class: com.yourcompany.Tests.TimingLogTest<br>Parameters: chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.45 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.lXIwfe}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=dac9679f078049b585de982a7f61068d, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dac9679f078049b585de982a7f61068d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1644446478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644446478'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.45 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.lXIwfe}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=dac9679f078049b585de982a7f61068d, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dac9679f078049b585de982a7f61068d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>83</td>
+<td>com.yourcompany.Tests.TimingLogTest@163e4e87</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s()'><b>pageLoadTimeShouldLessThan5s</b><br>Test class: com.yourcompany.Tests.MetricsLogTest<br>Parameters: chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 433 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1712_28331}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=f4225d6fec414758b8e5d0912a92a5fc, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f4225d6fec414758b8e5d0912a92a5fc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace466410333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace466410333'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 433 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1712_28331}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=f4225d6fec414758b8e5d0912a92a5fc, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f4225d6fec414758b8e5d0912a92a5fc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>74</td>
+<td>com.yourcompany.Tests.MetricsLogTest@d4342c2</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s()'><b>pageLoadTimeShouldLessThan5s</b><br>Test class: com.yourcompany.Tests.MetricsLogTest<br>Parameters: chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 255 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3832_10822}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=34329cdf58e248f798ce9aae6336e8f4, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34329cdf58e248f798ce9aae6336e8f4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace76121997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace76121997'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 255 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3832_10822}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=34329cdf58e248f798ce9aae6336e8f4, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34329cdf58e248f798ce9aae6336e8f4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>75</td>
+<td>com.yourcompany.Tests.MetricsLogTest@d4342c2</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s()'><b>pageLoadTimeShouldLessThan5s</b><br>Test class: com.yourcompany.Tests.MetricsLogTest<br>Parameters: chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 352 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.kG2gsA}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=a9414b805a424cacb6d87d1bcefa4bd2, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9414b805a424cacb6d87d1bcefa4bd2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134636920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134636920'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 352 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.kG2gsA}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=a9414b805a424cacb6d87d1bcefa4bd2, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9414b805a424cacb6d87d1bcefa4bd2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>83</td>
+<td>com.yourcompany.Tests.MetricsLogTest@d4342c2</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s()'><b>pageLoadTimeShouldLessThan5s</b><br>Test class: com.yourcompany.Tests.MetricsLogTest<br>Parameters: chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 540 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.N2OdOX}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b7bb13878f48425eb6bd0d68ae0110ac, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7bb13878f48425eb6bd0d68ae0110ac
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276727803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276727803'><pre>org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 540 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.N2OdOX}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b7bb13878f48425eb6bd0d68ae0110ac, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7bb13878f48425eb6bd0d68ae0110ac
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>83</td>
+<td>com.yourcompany.Tests.MetricsLogTest@d4342c2</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput()'><b>verifyHelloOutput</b><br>Test class: com.yourcompany.Tests.CustomPerformanceCommandTest<br>Parameters: chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: SPEEDINDEX_OF_ZERO (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1760_24899}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=5dafbf8f4cc340328f643c42c5087c7a, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5dafbf8f4cc340328f643c42c5087c7a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageLoad(SauceDemoPage.java:104)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471868267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471868267'><pre>org.openqa.selenium.WebDriverException: SPEEDINDEX_OF_ZERO (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1760_24899}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=5dafbf8f4cc340328f643c42c5087c7a, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5dafbf8f4cc340328f643c42c5087c7a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageLoad(SauceDemoPage.java:104)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>73</td>
+<td>com.yourcompany.Tests.CustomPerformanceCommandTest@2bbf180e</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput()'><b>verifyHelloOutput</b><br>Test class: com.yourcompany.Tests.CustomPerformanceCommandTest<br>Parameters: chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 558 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2608_7998}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=24779705bee342bb83ba3f1f8ed2d4ef, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24779705bee342bb83ba3f1f8ed2d4ef
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace162238316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace162238316'><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 558 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2608_7998}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=24779705bee342bb83ba3f1f8ed2d4ef, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24779705bee342bb83ba3f1f8ed2d4ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>74</td>
+<td>com.yourcompany.Tests.CustomPerformanceCommandTest@2bbf180e</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput()'><b>verifyHelloOutput</b><br>Test class: com.yourcompany.Tests.CustomPerformanceCommandTest<br>Parameters: chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 465 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.u7VAyp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=8ac398cf07b743f0aa1550ea0df14218, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8ac398cf07b743f0aa1550ea0df14218
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542894632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542894632'><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 465 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.u7VAyp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=8ac398cf07b743f0aa1550ea0df14218, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8ac398cf07b743f0aa1550ea0df14218
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>82</td>
+<td>com.yourcompany.Tests.CustomPerformanceCommandTest@2bbf180e</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput()'><b>verifyHelloOutput</b><br>Test class: com.yourcompany.Tests.CustomPerformanceCommandTest<br>Parameters: chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 553 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.oTFq5k}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=d81433cacbfc46e5bd5d31c696f67160, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d81433cacbfc46e5bd5d31c696f67160
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779881350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779881350'><pre>org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 553 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.oTFq5k}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=d81433cacbfc46e5bd5d31c696f67160, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d81433cacbfc46e5bd5d31c696f67160
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>82</td>
+<td>com.yourcompany.Tests.CustomPerformanceCommandTest@2bbf180e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs()'><b>networkLogShouldHaveMainjs</b><br>Test class: com.yourcompany.Tests.NetworkLogTest<br>Parameters: chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td></td>
+<td>73</td>
+<td>com.yourcompany.Tests.NetworkLogTest@419c5f1a</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs()'><b>networkLogShouldHaveMainjs</b><br>Test class: com.yourcompany.Tests.NetworkLogTest<br>Parameters: chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td></td>
+<td>75</td>
+<td>com.yourcompany.Tests.NetworkLogTest@419c5f1a</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs()'><b>networkLogShouldHaveMainjs</b><br>Test class: com.yourcompany.Tests.NetworkLogTest<br>Parameters: chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td></td>
+<td>82</td>
+<td>com.yourcompany.Tests.NetworkLogTest@419c5f1a</td></tr>
+<tr>
+<td title='com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs()'><b>networkLogShouldHaveMainjs</b><br>Test class: com.yourcompany.Tests.NetworkLogTest<br>Parameters: chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException</td>
+<td></td>
+<td>83</td>
+<td>com.yourcompany.Tests.NetworkLogTest@419c5f1a</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="40" parallel="classes" name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.yourcompany.Tests.MetricsLogTest"/>
+      <class name="com.yourcompany.Tests.CustomPerformanceCommandTest"/>
+      <class name="com.yourcompany.Tests.TimingLogTest"/>
+      <class name="com.yourcompany.Tests.TestBase"/>
+      <class name="com.yourcompany.Tests.PerformanceTest"/>
+      <class name="com.yourcompany.Tests.NetworkLogTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test parallel="classes" name="Command line test(failed)">
+    <classes>
+      <class name="com.yourcompany.Tests.TimingLogTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkTimingLog" invocation-numbers="3 2 0 1"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.TimingLogTest -->
+      <class name="com.yourcompany.Tests.PerformanceTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkPerformanceLog" invocation-numbers="3 0 2 1"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.PerformanceTest -->
+      <class name="com.yourcompany.Tests.CustomPerformanceCommandTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyHelloOutput" invocation-numbers="3 2 1 0"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.CustomPerformanceCommandTest -->
+      <class name="com.yourcompany.Tests.MetricsLogTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="pageLoadTimeShouldLessThan5s" invocation-numbers="3 2 1 0"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.MetricsLogTest -->
+      <class name="com.yourcompany.Tests.NetworkLogTest">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.NetworkLogTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

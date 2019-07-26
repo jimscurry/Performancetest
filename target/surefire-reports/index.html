@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 16 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.PerformanceTest" class="method navigator-link" hash-for-method="checkPerformanceLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog...)">checkPerformanceLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.PerformanceTest" class="method navigator-link" hash-for-method="checkPerformanceLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(j...)">checkPerformanceLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(j...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.PerformanceTest" class="method navigator-link" hash-for-method="checkPerformanceLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)">checkPerformanceLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.PerformanceTest" class="method navigator-link" hash-for-method="checkPerformanceLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)">checkPerformanceLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.TimingLogTest" class="method navigator-link" hash-for-method="checkTimingLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.l...)">checkTimingLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.TimingLogTest" class="method navigator-link" hash-for-method="checkTimingLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)">checkTimingLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.TimingLogTest" class="method navigator-link" hash-for-method="checkTimingLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lan...)">checkTimingLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.TimingLogTest" class="method navigator-link" hash-for-method="checkTimingLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)">checkTimingLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.MetricsLogTest" class="method navigator-link" hash-for-method="pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)">pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.MetricsLogTest" class="method navigator-link" hash-for-method="pageLoadTimeShouldLessThan5s(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLe...)">pageLoadTimeShouldLessThan5s(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.MetricsLogTest" class="method navigator-link" hash-for-method="pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLess...)">pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLess...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.MetricsLogTest" class="method navigator-link" hash-for-method="pageLoadTimeShouldLessThan5s(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)">pageLoadTimeShouldLessThan5s(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.CustomPerformanceCommandTest" class="method navigator-link" hash-for-method="verifyHelloOutput(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)">verifyHelloOutput(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.CustomPerformanceCommandTest" class="method navigator-link" hash-for-method="verifyHelloOutput(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHe...)">verifyHelloOutput(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.CustomPerformanceCommandTest" class="method navigator-link" hash-for-method="verifyHelloOutput(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)">verifyHelloOutput(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.CustomPerformanceCommandTest" class="method navigator-link" hash-for-method="verifyHelloOutput(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verify...)">verifyHelloOutput(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verify...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.NetworkLogTest" class="method navigator-link" hash-for-method="networkLogShouldHaveMainjs(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)">networkLogShouldHaveMainjs(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.NetworkLogTest" class="method navigator-link" hash-for-method="networkLogShouldHaveMainjs(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)">networkLogShouldHaveMainjs(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.NetworkLogTest" class="method navigator-link" hash-for-method="networkLogShouldHaveMainjs(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHave...)">networkLogShouldHaveMainjs(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHave...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.yourcompany.Tests.NetworkLogTest" class="method navigator-link" hash-for-method="networkLogShouldHaveMainjs(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMa...)">networkLogShouldHaveMainjs(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yourcompany.Tests.TimingLogTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTimingLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.l...)">
+                  </a> <!-- checkTimingLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.l...) -->
+                  <span class="method-name">checkTimingLog</span>
+                  <span class="parameters">(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.45 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.lXIwfe}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=dac9679f078049b585de982a7f61068d, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dac9679f078049b585de982a7f61068d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTimingLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)">
+                  </a> <!-- checkTimingLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...) -->
+                  <span class="method-name">checkTimingLog</span>
+                  <span class="parameters">(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 338 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2560_9166}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=58cd5ab57da94b7aaf21100ac32e25da, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 58cd5ab57da94b7aaf21100ac32e25da
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTimingLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lan...)">
+                  </a> <!-- checkTimingLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lan...) -->
+                  <span class="method-name">checkTimingLog</span>
+                  <span class="parameters">(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 288 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1644_1659}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b8ac8285e5734eb896fdc2058dc9d211, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8ac8285e5734eb896fdc2058dc9d211
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTimingLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)">
+                  </a> <!-- checkTimingLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...) -->
+                  <span class="method-name">checkTimingLog</span>
+                  <span class="parameters">(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:timing&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.Km58PL}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=81b22998a25c4c86b7a4d6f392c3d12e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81b22998a25c4c86b7a4d6f392c3d12e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yourcompany.Tests.PerformanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPerformanceLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog...)">
+                  </a> <!-- checkPerformanceLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog...) -->
+                  <span class="method-name">checkPerformanceLog</span>
+                  <span class="parameters">(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPerformanceLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(j...)">
+                  </a> <!-- checkPerformanceLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(j...) -->
+                  <span class="method-name">checkPerformanceLog</span>
+                  <span class="parameters">(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPerformanceLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)">
+                  </a> <!-- checkPerformanceLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...) -->
+                  <span class="method-name">checkPerformanceLog</span>
+                  <span class="parameters">(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPerformanceLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)">
+                  </a> <!-- checkPerformanceLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...) -->
+                  <span class="method-name">checkPerformanceLog</span>
+                  <span class="parameters">(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelloOutput(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)">
+                  </a> <!-- verifyHelloOutput(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...) -->
+                  <span class="method-name">verifyHelloOutput</span>
+                  <span class="parameters">(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 558 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2608_7998}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=24779705bee342bb83ba3f1f8ed2d4ef, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24779705bee342bb83ba3f1f8ed2d4ef
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelloOutput(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHe...)">
+                  </a> <!-- verifyHelloOutput(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHe...) -->
+                  <span class="method-name">verifyHelloOutput</span>
+                  <span class="parameters">(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: SPEEDINDEX_OF_ZERO (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1760_24899}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=5dafbf8f4cc340328f643c42c5087c7a, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5dafbf8f4cc340328f643c42c5087c7a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageLoad(SauceDemoPage.java:104)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelloOutput(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)">
+                  </a> <!-- verifyHelloOutput(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...) -->
+                  <span class="method-name">verifyHelloOutput</span>
+                  <span class="parameters">(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 553 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.oTFq5k}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=d81433cacbfc46e5bd5d31c696f67160, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d81433cacbfc46e5bd5d31c696f67160
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelloOutput(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verify...)">
+                  </a> <!-- verifyHelloOutput(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verify...) -->
+                  <span class="method-name">verifyHelloOutput</span>
+                  <span class="parameters">(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 465 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.u7VAyp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=8ac398cf07b743f0aa1550ea0df14218, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8ac398cf07b743f0aa1550ea0df14218
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yourcompany.Tests.MetricsLogTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)">
+                  </a> <!-- pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...) -->
+                  <span class="method-name">pageLoadTimeShouldLessThan5s</span>
+                  <span class="parameters">(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 255 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3832_10822}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=34329cdf58e248f798ce9aae6336e8f4, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34329cdf58e248f798ce9aae6336e8f4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageLoadTimeShouldLessThan5s(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLe...)">
+                  </a> <!-- pageLoadTimeShouldLessThan5s(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLe...) -->
+                  <span class="method-name">pageLoadTimeShouldLessThan5s</span>
+                  <span class="parameters">(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 540 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.N2OdOX}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b7bb13878f48425eb6bd0d68ae0110ac, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7bb13878f48425eb6bd0d68ae0110ac
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLess...)">
+                  </a> <!-- pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLess...) -->
+                  <span class="method-name">pageLoadTimeShouldLessThan5s</span>
+                  <span class="parameters">(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 433 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1712_28331}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=f4225d6fec414758b8e5d0912a92a5fc, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f4225d6fec414758b8e5d0912a92a5fc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageLoadTimeShouldLessThan5s(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)">
+                  </a> <!-- pageLoadTimeShouldLessThan5s(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...) -->
+                  <span class="method-name">pageLoadTimeShouldLessThan5s</span>
+                  <span class="parameters">(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Log type &quot;sauce:metrics&quot; is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 352 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.local&apos;, ip: &apos;172.20.10.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.kG2gsA}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=a9414b805a424cacb6d87d1bcefa4bd2, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9414b805a424cacb6d87d1bcefa4bd2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.yourcompany.Tests.NetworkLogTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkLogShouldHaveMainjs(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)">
+                  </a> <!-- networkLogShouldHaveMainjs(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...) -->
+                  <span class="method-name">networkLogShouldHaveMainjs</span>
+                  <span class="parameters">(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkLogShouldHaveMainjs(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)">
+                  </a> <!-- networkLogShouldHaveMainjs(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...) -->
+                  <span class="method-name">networkLogShouldHaveMainjs</span>
+                  <span class="parameters">(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkLogShouldHaveMainjs(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHave...)">
+                  </a> <!-- networkLogShouldHaveMainjs(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHave...) -->
+                  <span class="method-name">networkLogShouldHaveMainjs</span>
+                  <span class="parameters">(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkLogShouldHaveMainjs(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMa...)">
+                  </a> <!-- networkLogShouldHaveMainjs(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMa...) -->
+                  <span class="method-name">networkLogShouldHaveMainjs</span>
+                  <span class="parameters">(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMainjs(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;40&quot; parallel=&quot;classes&quot; name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.MetricsLogTest&quot;/&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.CustomPerformanceCommandTest&quot;/&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.TimingLogTest&quot;/&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.PerformanceTest&quot;/&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.NetworkLogTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;Command line test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.TimingLogTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;checkTimingLog&quot; invocation-numbers=&quot;3 2 0 1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yourcompany.Tests.TimingLogTest --&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.PerformanceTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;checkPerformanceLog&quot; invocation-numbers=&quot;3 0 2 1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yourcompany.Tests.PerformanceTest --&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.CustomPerformanceCommandTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;verifyHelloOutput&quot; invocation-numbers=&quot;3 2 1 0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yourcompany.Tests.CustomPerformanceCommandTest --&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.MetricsLogTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;pageLoadTimeShouldLessThan5s&quot; invocation-numbers=&quot;3 2 1 0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yourcompany.Tests.MetricsLogTest --&gt;
+      &lt;class name=&quot;com.yourcompany.Tests.NetworkLogTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yourcompany.Tests.NetworkLogTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Command line test(failed) (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkTimingLog')
+data.setCell(0, 2, 'com.yourcompany.Tests.TimingLogTest')
+data.setCell(0, 3, 83721);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'pageLoadTimeShouldLessThan5s')
+data.setCell(1, 2, 'com.yourcompany.Tests.MetricsLogTest')
+data.setCell(1, 3, 83642);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'pageLoadTimeShouldLessThan5s')
+data.setCell(2, 2, 'com.yourcompany.Tests.MetricsLogTest')
+data.setCell(2, 3, 83642);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkPerformanceLog')
+data.setCell(3, 2, 'com.yourcompany.Tests.PerformanceTest')
+data.setCell(3, 3, 83537);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkTimingLog')
+data.setCell(4, 2, 'com.yourcompany.Tests.TimingLogTest')
+data.setCell(4, 3, 83426);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'networkLogShouldHaveMainjs')
+data.setCell(5, 2, 'com.yourcompany.Tests.NetworkLogTest')
+data.setCell(5, 3, 83280);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyHelloOutput')
+data.setCell(6, 2, 'com.yourcompany.Tests.CustomPerformanceCommandTest')
+data.setCell(6, 3, 82758);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'networkLogShouldHaveMainjs')
+data.setCell(7, 2, 'com.yourcompany.Tests.NetworkLogTest')
+data.setCell(7, 3, 82415);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyHelloOutput')
+data.setCell(8, 2, 'com.yourcompany.Tests.CustomPerformanceCommandTest')
+data.setCell(8, 3, 82318);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'networkLogShouldHaveMainjs')
+data.setCell(9, 2, 'com.yourcompany.Tests.NetworkLogTest')
+data.setCell(9, 3, 75741);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'pageLoadTimeShouldLessThan5s')
+data.setCell(10, 2, 'com.yourcompany.Tests.MetricsLogTest')
+data.setCell(10, 3, 75434);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyHelloOutput')
+data.setCell(11, 2, 'com.yourcompany.Tests.CustomPerformanceCommandTest')
+data.setCell(11, 3, 74968);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkTimingLog')
+data.setCell(12, 2, 'com.yourcompany.Tests.TimingLogTest')
+data.setCell(12, 3, 74518);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'pageLoadTimeShouldLessThan5s')
+data.setCell(13, 2, 'com.yourcompany.Tests.MetricsLogTest')
+data.setCell(13, 3, 74286);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyHelloOutput')
+data.setCell(14, 2, 'com.yourcompany.Tests.CustomPerformanceCommandTest')
+data.setCell(14, 3, 73138);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'networkLogShouldHaveMainjs')
+data.setCell(15, 2, 'com.yourcompany.Tests.NetworkLogTest')
+data.setCell(15, 3, 73046);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkPerformanceLog')
+data.setCell(16, 2, 'com.yourcompany.Tests.PerformanceTest')
+data.setCell(16, 3, 72750);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkTimingLog')
+data.setCell(17, 2, 'com.yourcompany.Tests.TimingLogTest')
+data.setCell(17, 3, 72648);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkPerformanceLog')
+data.setCell(18, 2, 'com.yourcompany.Tests.PerformanceTest')
+data.setCell(18, 3, 72176);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkPerformanceLog')
+data.setCell(19, 2, 'com.yourcompany.Tests.PerformanceTest')
+data.setCell(19, 3, 71182);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.PerformanceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkPerformanceLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkPerformanceLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkPerformanceLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(j...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkPerformanceLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.TimingLogTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTimingLog(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.l...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTimingLog(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.lan...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTimingLog(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTimingLog(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.TimingLogTest.checkTimingLog(java.la...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.NetworkLogTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">networkLogShouldHaveMainjs(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHave...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">networkLogShouldHaveMainjs(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">networkLogShouldHaveMainjs(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveMa...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">networkLogShouldHaveMainjs(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.NetworkLogTest.networkLogShouldHaveM...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.MetricsLogTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">pageLoadTimeShouldLessThan5s(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLe...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">pageLoadTimeShouldLessThan5s(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLes...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">pageLoadTimeShouldLessThan5s(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLess...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHelloOutput(chrome, latest-1, OS X 10.10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHelloOutput(chrome, latest-1, Windows 7, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHe...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHelloOutput(chrome, latest-1, Windows 10, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verifyH...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHelloOutput(chrome, latest-1, macOS 10.14, public void com.yourcompany.Tests.CustomPerformanceCommandTest.verify...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.PerformanceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkPerformanceLog status=FAILURE method=PerformanceTest.checkPerformanceLog(java....)</span>
+                <span class="method-start">71185 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkPerformanceLog status=FAILURE method=PerformanceTest.checkPerformanceLog(java....)</span>
+                <span class="method-start">72180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkPerformanceLog status=FAILURE method=PerformanceTest.checkPerformanceLog(java....)</span>
+                <span class="method-start">72751 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.NetworkLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=networkLogShouldHaveMainjs status=SUCCESS method=NetworkLogTest.networkLogShouldHav...)</span>
+                <span class="method-start">73046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=networkLogShouldHaveMainjs status=SUCCESS method=NetworkLogTest.networkLogShouldHav...)</span>
+                <span class="method-start">75743 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.TimingLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkTimingLog status=FAILURE method=TimingLogTest.checkTimingLog(java.lang.String,...)</span>
+                <span class="method-start">77658 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyHelloOutput status=FAILURE method=CustomPerformanceCommandTest.verifyHelloOut...)</span>
+                <span class="method-start">78140 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.MetricsLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=pageLoadTimeShouldLessThan5s status=FAILURE method=MetricsLogTest.pageLoadTimeShoul...)</span>
+                <span class="method-start">79292 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.TimingLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkTimingLog status=FAILURE method=TimingLogTest.checkTimingLog(java.lang.String,...)</span>
+                <span class="method-start">79522 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyHelloOutput status=FAILURE method=CustomPerformanceCommandTest.verifyHelloOut...)</span>
+                <span class="method-start">79973 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.MetricsLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=pageLoadTimeShouldLessThan5s status=FAILURE method=MetricsLogTest.pageLoadTimeShoul...)</span>
+                <span class="method-start">80439 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyHelloOutput status=FAILURE method=CustomPerformanceCommandTest.verifyHelloOut...)</span>
+                <span class="method-start">82319 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.NetworkLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=networkLogShouldHaveMainjs status=SUCCESS method=NetworkLogTest.networkLogShouldHav...)</span>
+                <span class="method-start">82415 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.CustomPerformanceCommandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyHelloOutput status=FAILURE method=CustomPerformanceCommandTest.verifyHelloOut...)</span>
+                <span class="method-start">82759 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.NetworkLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=networkLogShouldHaveMainjs status=SUCCESS method=NetworkLogTest.networkLogShouldHav...)</span>
+                <span class="method-start">83280 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.TimingLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkTimingLog status=FAILURE method=TimingLogTest.checkTimingLog(java.lang.String,...)</span>
+                <span class="method-start">83427 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.PerformanceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkPerformanceLog status=FAILURE method=PerformanceTest.checkPerformanceLog(java....)</span>
+                <span class="method-start">83538 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.MetricsLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=pageLoadTimeShouldLessThan5s status=FAILURE method=MetricsLogTest.pageLoadTimeShoul...)</span>
+                <span class="method-start">83643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=pageLoadTimeShouldLessThan5s status=FAILURE method=MetricsLogTest.pageLoadTimeShoul...)</span>
+                <span class="method-start">83643 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.Tests.TimingLogTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkTimingLog status=FAILURE method=TimingLogTest.checkTimingLog(java.lang.String,...)</span>
+                <span class="method-start">83722 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

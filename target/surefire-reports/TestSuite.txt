@@ -1,0 +1,264 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 90.748 sec <<< FAILURE!
+checkPerformanceLog(com.yourcompany.Tests.PerformanceTest)  Time elapsed: 71.184 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+
+checkPerformanceLog(com.yourcompany.Tests.PerformanceTest)  Time elapsed: 72.177 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+
+checkPerformanceLog(com.yourcompany.Tests.PerformanceTest)  Time elapsed: 72.748 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+
+checkTimingLog(com.yourcompany.Tests.TimingLogTest)  Time elapsed: 77.655 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:timing" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 288 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1644_1659}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b8ac8285e5734eb896fdc2058dc9d211, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8ac8285e5734eb896fdc2058dc9d211
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+
+verifyHelloOutput(com.yourcompany.Tests.CustomPerformanceCommandTest)  Time elapsed: 78.138 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: SPEEDINDEX_OF_ZERO (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1760_24899}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=5dafbf8f4cc340328f643c42c5087c7a, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5dafbf8f4cc340328f643c42c5087c7a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageLoad(SauceDemoPage.java:104)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:28)
+
+pageLoadTimeShouldLessThan5s(com.yourcompany.Tests.MetricsLogTest)  Time elapsed: 79.289 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:metrics" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 433 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1712_28331}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=f4225d6fec414758b8e5d0912a92a5fc, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f4225d6fec414758b8e5d0912a92a5fc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+
+checkTimingLog(com.yourcompany.Tests.TimingLogTest)  Time elapsed: 79.519 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:timing" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 338 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2560_9166}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=58cd5ab57da94b7aaf21100ac32e25da, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 58cd5ab57da94b7aaf21100ac32e25da
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+
+verifyHelloOutput(com.yourcompany.Tests.CustomPerformanceCommandTest)  Time elapsed: 79.971 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 558 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2608_7998}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=24779705bee342bb83ba3f1f8ed2d4ef, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24779705bee342bb83ba3f1f8ed2d4ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+
+pageLoadTimeShouldLessThan5s(com.yourcompany.Tests.MetricsLogTest)  Time elapsed: 80.437 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:metrics" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 255 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3832_10822}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=34329cdf58e248f798ce9aae6336e8f4, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34329cdf58e248f798ce9aae6336e8f4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+
+verifyHelloOutput(com.yourcompany.Tests.CustomPerformanceCommandTest)  Time elapsed: 82.317 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 465 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.u7VAyp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=8ac398cf07b743f0aa1550ea0df14218, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8ac398cf07b743f0aa1550ea0df14218
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+
+verifyHelloOutput(com.yourcompany.Tests.CustomPerformanceCommandTest)  Time elapsed: 82.757 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: The arguments passed to a command are either invalid or malformed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 553 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.oTFq5k}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=d81433cacbfc46e5bd5d31c696f67160, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d81433cacbfc46e5bd5d31c696f67160
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.assertPerformancePageWeight(SauceDemoPage.java:112)
+	at com.yourcompany.Tests.CustomPerformanceCommandTest.verifyHelloOutput(CustomPerformanceCommandTest.java:31)
+
+checkTimingLog(com.yourcompany.Tests.TimingLogTest)  Time elapsed: 83.425 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:timing" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.Km58PL}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=81b22998a25c4c86b7a4d6f392c3d12e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81b22998a25c4c86b7a4d6f392c3d12e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+
+checkPerformanceLog(com.yourcompany.Tests.PerformanceTest)  Time elapsed: 83.535 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.yourcompany.Tests.PerformanceTest.checkPerformanceLog(PerformanceTest.java:34)
+
+pageLoadTimeShouldLessThan5s(com.yourcompany.Tests.MetricsLogTest)  Time elapsed: 83.64 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:metrics" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 352 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.com.google.Chrome.kG2gsA}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=a9414b805a424cacb6d87d1bcefa4bd2, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9414b805a424cacb6d87d1bcefa4bd2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+
+pageLoadTimeShouldLessThan5s(com.yourcompany.Tests.MetricsLogTest)  Time elapsed: 83.641 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:metrics" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 540 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.N2OdOX}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=b7bb13878f48425eb6bd0d68ae0110ac, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7bb13878f48425eb6bd0d68ae0110ac
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getMetrics(SauceDemoPage.java:90)
+	at com.yourcompany.Tests.MetricsLogTest.pageLoadTimeShouldLessThan5s(MetricsLogTest.java:28)
+
+checkTimingLog(com.yourcompany.Tests.TimingLogTest)  Time elapsed: 83.719 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Log type "sauce:timing" is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.45 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'SL-1155.local', ip: '172.20.10.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '11.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64533}, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/d2/qw7q16_j7yb7yk5r6b8sl0n40000kr/T/.com.google.Chrome.lXIwfe}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=74.0.3729.108, proxy={}, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=dac9679f078049b585de982a7f61068d, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dac9679f078049b585de982a7f61068d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.yourcompany.Pages.SauceDemoPage.getTiming(SauceDemoPage.java:96)
+	at com.yourcompany.Tests.TimingLogTest.checkTimingLog(TimingLogTest.java:28)
+
